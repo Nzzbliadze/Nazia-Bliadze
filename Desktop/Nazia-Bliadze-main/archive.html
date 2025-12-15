@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="Gallery\logo.ico" type="image/icon" />
+    <meta name="keywords" content="Tadzrisi, Sakire, Dgvari, tourist, agency" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="center_header">
+            <h1 class="header-container">
+                <a href="index.html">
+                    <img class="header_logo" src="Gallery\L.png" alt="TSDAgency" />
+                    <span class="header-title">TSDAgency</span>
+                </a>
+            </h1>
+            
+            <nav class="header__nav">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    ☰
+                    
+                </label>
+                <ul class="header-menu">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="Products.html">Products</a></li>
+                    <li><a class="nav-link" href="archive.html">Archive</a></li>
+                    <li><a class="nav-link" href="team.html">Team</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+
+       </div>
+    </header>
+  <main class="main">
+    <h2>Historical Archive Portal</h2>    
+<div class="contact-content-wrapper">
+      <div id="register-section" class="register-section">
+        <form action="signup.php" method="POST">
+          <fieldset>
+            <legend>Register</legend>
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" name="fullname" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label>Create Password</label>
+              <input type="password" name="password" required />
+            </div>
+            <div class="form-group">
+              <label>Confirm Password</label>
+              <input type="password" name="confirm_password" required />
+            </div>
+            <button type="submit" class="submit-button">Register</button>
+          </fieldset>
+        </form>
+        <a class="toggle-link">Already have an account? Log in</a>
+      </div>
+</div>
+<div class="contact-content-wrapper">
+      <div id="login-section" class="login-section" style="display:none">
+        <form action="login.php" method="POST">
+          <fieldset>
+            <legend>Login</legend>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" name="password" required />
+            </div>
+            <button type="submit" class="submit-button">Login</button>
+          </fieldset>
+        </form>
+      </div>
+      </div>
+
+      <h4>Welcome</h4>
+
+      <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Upload a File</legend>
+          <input type="file" name="uploadedFile" accept=".pdf,.docx,.txt" required>
+          <button type="submit" name="submit" class="submit-button">Upload</button>
+        </fieldset>
+      </form>
+</main>
+<footer class="site-footer">
+
+  <div class="footer-content">
+    <section class="footer-subscribe">
+
+      <div class="socials">
+        <a href="https://facebook.com">
+          <img src="Gallery/fb png.png" alt="TSDAgency on Facebook" />
+        </a>
+        <a href="https://instagram.com">
+          <img src="Gallery/insta png.png" alt="TSDAgency on Instagram" />
+        </a>
+      </div>
+      <h3><a class="join" href="contact.php">Join Us</a></h3>
+    </section>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 TSDAgency. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
