@@ -1,6 +1,4 @@
-/**
- * @jest-environment jsdom
- */
+
 import { jest, describe, test, expect, beforeEach } from '@jest/globals';
 
 describe("loadTripProducts()", () => {
@@ -8,7 +6,7 @@ describe("loadTripProducts()", () => {
   let fetchFakestoreDataMock;
 
   beforeEach(async () => {
-    jest.resetModules(); // Reset cache to ensure fresh mock
+    jest.resetModules(); 
     fetchFakestoreDataMock = jest.fn();
 
     jest.unstable_mockModule("../api/fakestoreapi.js", () => ({
@@ -34,8 +32,6 @@ describe("loadTripProducts()", () => {
     const container = document.createElement("div");
 
     await loadTripProducts(container);
-
-    // Wait for microtasks to complete (async rendering)
     await new Promise(process.nextTick);
 
     expect(container.children.length).toBe(1);
@@ -48,8 +44,6 @@ describe("loadTripProducts()", () => {
     const container = document.createElement("div");
 
     await loadTripProducts(container);
-
-    // Wait for microtasks to complete
     await new Promise(process.nextTick);
 
     expect(container.innerHTML).toContain(

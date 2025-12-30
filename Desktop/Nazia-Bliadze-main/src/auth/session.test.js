@@ -1,6 +1,4 @@
-/**
- * @jest-environment jsdom
- */
+
 import { greetUser } from "./session.js";
 import { jest, describe, beforeEach, afterEach, test, expect } from '@jest/globals';
 
